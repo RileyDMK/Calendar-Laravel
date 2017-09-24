@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'PostsController@index');
+
+Route::get('/posts/{post}', 'PostsController@show');
+
 Route::get('/tasks', 'TasksController@index');
 
 Route::get('/tasks/{task}', 'TasksController@show');
